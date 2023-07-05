@@ -19,6 +19,10 @@ header ul li.nav-item{
 }
 header nav ul > li a{
   position: relative;
+  color: white !important;
+}
+header nav ul > li a.active{
+  color: var(--danger-color) !important;
 }
 header nav ul > li a::after{
   content: "";
@@ -34,9 +38,6 @@ header nav ul > li .active::after
 {
   width: 100%;
   background-color: var(--danger-color);
-}
-header nav ul > li a:hover::after{
-  width: 100%;
 }
 header ul .fa-chevron-down{
   font-size: 10px;
